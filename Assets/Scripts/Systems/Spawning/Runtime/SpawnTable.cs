@@ -15,7 +15,7 @@ namespace Systems.Spawning.Runtime
         {
             if (totalChance <= 0f)
             {
-                throw new System.Exception("Weights has no entries with a chance to be rolled.");
+                throw new System.Exception("SpawnTable has no entries with a chance to be rolled.");
             }
             
             float result = Random.Range(0f, totalChance);
