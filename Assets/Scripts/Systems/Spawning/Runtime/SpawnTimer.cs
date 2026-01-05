@@ -28,13 +28,11 @@
             }
 
             timeSinceLastSpawn += deltaTime;
-            float timeSinceStart = 0;
 
             int spawns = 0;
             while (timeSinceLastSpawn >= interval)
             {
                 timeSinceLastSpawn -= interval;
-                timeSinceStart += interval;
                 spawns += 1;
             }
 
