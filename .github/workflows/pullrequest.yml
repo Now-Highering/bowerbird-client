@@ -1,0 +1,10 @@
+jobs:
+  pull_request_job:
+    runs-on: ubuntu-latest
+    name: PR Job
+on:
+  pull_request:
+    # Sequence of patterns matched against refs/heads
+    branches:
+      - main
+      - cicd*
