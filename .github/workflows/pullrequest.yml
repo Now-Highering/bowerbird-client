@@ -2,6 +2,9 @@ jobs:
   pull_request_job:
     runs-on: ubuntu-latest
     name: PR Job
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
 on:
   pull_request:
     # Sequence of patterns matched against refs/heads
